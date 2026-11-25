@@ -1,7 +1,10 @@
 # ---FUNCIONES---
-
-def insertarElemento():
-    insertar= input("Indica qué ")
+def insertarElemento(lista):
+    insertar= input("Indica El nombre del cliente")
+    
+    
+    
+    
 def buscarElemento():
     buscar= input("Indica qué ")    
 def modificarElemento():        
@@ -11,14 +14,15 @@ def eliminarElemento():
 def mostrarElementos():
     mostrar= input("Indica qué ")
     
-def opciones(eleccion):
+def opciones(eleccion,lista):
     if (eleccion==1):
-        return insertarElemento()
+        return insertarElemento(lista)
     elif (eleccion==2):
-        return buscarElemento()    
+        return buscarElemento(lista)    
     elif (eleccion==3):
-        return modificarElemento()      
+        return modificarElemento(lista)      
     elif (eleccion==4):
-        return eliminarElemento()      
+        return eliminarElemento(lista)      
     elif (eleccion==5):
-        return mostrarElementos()
+        return mostrarElementos(lista)
+
